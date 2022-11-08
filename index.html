@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lighting of a bulb</title>
+  </head>
+  <body>
+    <div id="app">
+        <div
+          v-if="bulb == 'on' "
+          style="background-image: url('bulbOn.JPG'); height: 630px; width:1350px ;background; border-radius: 5px;"
+        >
+          <p>Bulbs are on</p>
+        </div>
+
+        <div
+          v-else
+          style="background-image: url('bulbOff.JPG'); height: 630px; width:1350px ; border-radius: 5px;"
+        >
+          <p>Bulbs are off</p>
+        </div>
+    </div>
+    <script src="vue.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
