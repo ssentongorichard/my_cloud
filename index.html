@@ -8,18 +8,21 @@
   </head>
   <body>
     <div id="app">
+        <div>
+          <button onclick="bulb == 'on' = !bulb == 'on' ">On</button>
+        </div>
         <div
           v-if="bulb == 'on' "
-          style="background-image: url('bulbOn.JPG'); height: 630px; width:1350px ;background; border-radius: 5px;"
+          style="background-image: url('bulbOn.JPG');height: 300px; width: 450px;"
         >
-          <p>Bulbs are on</p>
+          Bulbs are on
         </div>
 
         <div
-          v-else
-          style="background-image: url('bulbOff.JPG'); height: 630px; width:1350px ; border-radius: 5px;"
+          v-else="!bulb == 'on'"
+          style="background-image: url('bulbOff.JPG');height: 300px; width: 450px;"
         >
-          <p>Bulbs are off</p>
+          Bulbs are off
         </div>
     </div>
     <script src="vue.js"></script>
